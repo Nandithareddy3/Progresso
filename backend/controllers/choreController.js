@@ -7,11 +7,13 @@ const createChore = async (req, res) => {
         const user = req.user;
 
         const household = await Household.findById(user.household);
-
-        // --- AUTHORIZATION CHECK ---
-        // Check if the logged-in user is the admin of this household
+        console.log("--- DEBUG: Admin Check for Add Chore ---");
+        console.log("User ID making request:", user._id.toString());
+        console.log("Household's Admin ID:", household.admin.toString());
+        console.log("Do they match?", user._id.toString() === household.admin.toString());
+        console.log("--------------------------------------");
         if (household.admin.toString() !== user._id.toString()) {
-            return res.status(403).json({ message: 'Not authorized to add chores' }); // 403 means Forbidden
+            return res.status(403).json({ message: 'Not authorized to add chores' });
         }
 
         const chore = await Chore.create({
