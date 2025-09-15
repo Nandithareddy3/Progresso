@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/chores/';
+const API_URL = 'https://progresso-pobl.onrender.com/api/chores/';
 
 // Create a new chore
 const createChore = async (choreData, token) => {

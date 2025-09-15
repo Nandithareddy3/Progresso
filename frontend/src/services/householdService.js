@@ -1,5 +1,5 @@
 import axios from 'axios';
-const API_URL = 'http://localhost:5000/api/households/';
+const API_URL = 'https://progresso-pobl.onrender.com/api/households/';
 
 // Create a new household
 const createHousehold = async (householdData, token) => {
