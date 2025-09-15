@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json())//middleware to accept the json data in the body of requests
 // CORS Configuration
 const corsOptions = {
-    origin: 'https://progresso-task-manager.netlify.app/',
+    origin: 'https://progresso-task-manager.netlify.app',
     optionsSuccessStatus: 200
 };
 
