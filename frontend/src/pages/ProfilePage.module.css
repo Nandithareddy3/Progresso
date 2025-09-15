@@ -1,0 +1,120 @@
+.profilePage {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.leftColumn {
+    flex: 0 0 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profileCard {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin: 0 auto 20px auto;
+    border: 4px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profileCard h2 {
+    margin: 0;
+    color: #333;
+}
+
+.profileCard p {
+    color: #666;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.statsCard {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.statsCard div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 15px 10px;
+}
+
+.statsCard div:not(:last-child) {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.statsCard span {
+    color: #666;
+}
+
+.statsCard strong {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.rightColumn {
+    flex-grow: 1;
+}
+
+.historyCard {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.historyCard h2 {
+    margin-top: 0;
+}
+
+.historyRow {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 20px;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.historyRow:last-child {
+    border-bottom: none;
+}
+
+.historyDate {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.historyPoints {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

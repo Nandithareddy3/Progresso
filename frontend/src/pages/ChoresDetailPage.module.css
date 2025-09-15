@@ -1,0 +1,35 @@
+.detailContainer {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    border: 1px solid #333;
+}
+
+.detailHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.backLink {
+    color: #bb86fc;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+.assignmentItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #333;
+}
+
+.choreActions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

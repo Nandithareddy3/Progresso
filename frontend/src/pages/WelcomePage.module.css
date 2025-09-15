@@ -1,0 +1,74 @@
+.welcomePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7f6;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.welcomeContent {
+    width: 100%;
+    max-width: 800px;
+}
+
+.welcomeContent h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.welcomeContent p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.optionsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.optionCard {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    width: 300px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.optionCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.optionCard.primary {
+    border-color: #27ae60;
+}
+
+.optionCard h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.optionCard .description {
+    font-size: 1rem;
+    color: #666;
+}
+
+.backButton {
+    margin-top: 30px;
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    font-size: 1rem;
+}
