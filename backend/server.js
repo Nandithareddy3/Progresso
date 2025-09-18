@@ -6,11 +6,7 @@ dotenv.config();
 const app = express();
 
 app.use(express.json())//middleware to accept the json data in the body of requests
-// CORS Configuration
-const corsOptions = {
-    origin: 'https://progresso-task-manager.netlify.app',
-    optionsSuccessStatus: 200
-};
+app.use(cors());
 
 app.use(cors(corsOptions));
 //routes
