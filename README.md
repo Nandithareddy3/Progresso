@@ -33,4 +33,4 @@ A full-stack MERN application for collaborative task management. It helps small 
 
 **Deployment:**
 - Backend on **Render**.
-- Frontend on **Netlify** (or **Vercel**).
+- Frontend on **Netlify**.
