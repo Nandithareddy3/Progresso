@@ -1,4 +1,4 @@
-## Progresso🏡
+## Progresso
 
 A full-stack MERN application for collaborative task management. It helps small teams and groups manage shared projects and responsibilities through a transparent, gamified, and points-based system.
 
